@@ -1,7 +1,9 @@
 body {
     background-color: #aea196;
+    /* background-color: #d0c7c2; */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: rgb(0, 0, 10);
-    font-size: 18px;
+    font-size: 30px;
 }
 h1 {
     text-align: center;
@@ -9,12 +11,26 @@ h1 {
   }
 
 h2 {
-font-size: 30px;
-color: #538499;
+  font-size: 50px;
+  color: #4b3e3e; 
+}
+.line{
+  border: none; /* Remove default border */
+  border-bottom: 3px solid #4b3e3e; 
+  padding: 50px 0;
+  /* margin: 10px 0;  */
+}
+.skip{
+  position: absolute;
+  top: -40px; /* Move the text 20 pixels up */
+}
+.skip:focus {
+  position: relative;
+  top: 20px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 40px;
   color: rgb(66, 61, 68);
   
   }
@@ -22,10 +38,11 @@ h3 {
 p{
     font-weight: 400;
     line-height: 2;
+    color: black;
 }
 
 img{
- border: 5px solid #e1e1e1; 
+ border: 5px solid #4d4949; 
   padding: 10px;
   margin: 20px;
   border-top-right-radius: 30px;
@@ -39,19 +56,21 @@ img{
  
  nav li {
   display: inline;
+  float: right; /* For floating to the right */
   margin-right: 20px;
+  
 }
 
 nav a {
   text-decoration: none;
-  color: #538499;
-  font-size: 25px;
+  color: rgb(66, 61, 68);
+  font-size: 40px;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px;
 }
 
 nav a:hover {
-  color:#19304d;
+  color: #241506;
   font-weight: bold;
 }
 
@@ -82,21 +101,64 @@ nav a:active {
   grid-row: span 2; /* Span 2 rows for the first image in every 3rd item */
 }
 
+.si-399 {
+  font-size: 50px;
+  float:left;
+  animation: spin 1s linear; /* Apply the 'spin' animation */
+}
+
+/* Define the 'spin' animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 @media only screen and (max-width: 600px) {
-
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 2 columns */
+    grid-gap: 10px; /* Spacing between grid items */
+  }
   body {
     background-color: lightblue;
     font-size: 25px;
   }
   h1{
-    text-align: right;
+    text-align: center;
+  }
+  h2{
+    color:#3f647c;
   }
   p{
     margin: auto;
-    padding-left: 50px;
+    padding-left: 40px;
+    font-size: 20px;
+    color:#113157;
     text-align: left;
    
   } 
+  nav a {
+    /* text-decoration: none; */
+    color: #437287;
+    
+    font-size: 25px;
+    /* font-weight: bold; */
+  }
+  nav a:hover {
+    color:#19304d;
+    font-weight: bold;
+  }
+  .si-399 {
+   display: none;
+  }
+}
 
+@media (prefers-reduced-motion: reduce) {
+  /* Hide GIFs */
+  .gif-class {
+    display: none;
+  }
+  .si-399 {
+    display: none;
+   }
 }
