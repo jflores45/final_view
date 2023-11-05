@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href = "css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href = "css/style.css"> 
 </head>
 <body>
-
-    <main>
+    <main class="content">
+        <div id="menuButton" class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <br>
+            <!-- Side menu -->
+            <div id="sideMenu" class="side-menu">
+                <ul>
+                    <li><a href="#top">Main</a></li>
+                    <li><a href="#sandwich"> Spicy Fried Chicken Sandwich </a></li>
+                    <li><a href="#pasta">Chicken Alfredo Pasta</a></li>
+                    <li><a href="#tacos">Vegan Tacos</a></li>
+                </ul>
+            </div>
         <nav>
             <ul>
                 <li> <a href= "pets.html"> Pets</a> </li>
@@ -23,8 +39,8 @@
         <a href = "" class = "skip"> skip to main </a>
         <div style="position: relative; right: -50px;">
 
-        <div class="line">
-            <h2>Spicy Fried Chicken Sandwich Recipe</h2>
+        <div class="line" id="sandwich">
+            <h2>Spicy Fried Chicken Sandwich</h2>
             <h4>Origin: American</h4>
             <h4>Source: Original recipe!</h4>
             <h4>Category: Main Dish</h4>
@@ -78,14 +94,20 @@
                 <li>Combine the buns, toppings, and chicken and serve!</li>
             </ol>
             <h3>Additional Food Images</h3>
-            <img src = images/chicken_breast_marinade.jpeg width="200" alt = "Chicken breast will be marinated for one to two hours.">
-            <img src = images/bun_with_toppings.jpeg alt = "Example of the prepared hamburger buns before chicken is added">
-            <img src = images/final_product_chicksandwich.jpeg alt = "Your succulent final product!">
+            <a href="images/chicken_breast_marinade.jpeg" data-fancybox="sandwich-gallery" data-caption="Chicken breast will be marinated for one to two hours.">
+                <img src="images/chicken_breast_marinade.jpeg" width="200" alt="Chicken breast will be marinated for one to two hours.">
+            </a>
+            <a href="images/bun_with_toppings.jpeg" data-fancybox="sandwich-gallery" data-caption="Example of the prepared hamburger buns before chicken is added">
+                <img src="images/bun_with_toppings.jpeg" alt="Example of the prepared hamburger buns before chicken is added">
+            </a>
+            <a href="images/final_product_chicksandwich.jpeg" data-fancybox="sandwich-gallery" data-caption="Your succulent final product!">
+                <img src="images/final_product_chicksandwich.jpeg" alt="Your succulent final product!">
+            </a>
             <!--Johann Tsegay-->
             
         </div>
         <br><br>
-        <div class="line">
+        <div class="line" id="pasta">
             <h2>Chicken Alfredo Pasta</h2>
             <h4>Origin: Italy</h4>
             <h4>Source: Grandma's Kitchen</h4>
@@ -118,12 +140,18 @@
             </ol>
         
             <h3>Additional Food images</h3>
-            <img src="images/chicken_breast.png" width="200" alt="Grilled chicken breasts">
-            <img src="images/parmesan_cheese.png" width="200" alt="Grated Parmesan cheese">
-            <img src="images/heavy_cream.png" width="200" alt="A carton of heavy cream">
+            <a href="images/chicken_breast.png" data-fancybox="pasta-gallery" data-caption="Grilled chicken breasts">
+                <img src="images/chicken_breast.png" width="200" alt="Grilled chicken breasts">
+            </a>
+            <a href="images/parmesan_cheese.png" data-fancybox="pasta-gallery" data-caption="Grated Parmesan cheese">
+                <img src="images/parmesan_cheese.png" width="200" alt="Grated Parmesan cheese">
+            </a>
+            <a href="images/heavy_cream.png" data-fancybox="pasta-gallery" data-caption="A carton of heavy cream">
+                <img src="images/heavy_cream.png" width="200" alt="A carton of heavy cream">
+            </a>
         </div>
         <br><br>
-        <div>
+        <div id="tacos">
             <h2>Vegan Tacos</h2>   
             <h4>Origin: Mexico</h4>
             <h4>Source: Vegan Cookbook</h4>
@@ -157,11 +185,63 @@
             </ol>
         
             <h3>Additional Food images</h3>
-            <img src="images/beans.png" width="200" alt="A bowl of beans">
-            <img src="images/avocado_slices.png" width="200" alt="Sliced avocado">
-            <img src="images/cilantro.png" width="200" alt="A bunch of fresh cilantro">
+            <a href="images/beans.png" data-fancybox="ingredients-gallery" data-caption="A bowl of beans">
+                <img src="images/beans.png" width="200" alt="A bowl of beans">
+            </a>
+            <a href="images/avocado_slices.png" data-fancybox="ingredients-gallery" data-caption="Sliced avocado">
+                <img src="images/avocado_slices.png" width="200" alt="Sliced avocado">
+            </a>
+            <a href="images/cilantro.png" data-fancybox="ingredients-gallery" data-caption="A bunch of fresh cilantro">
+                <img src="images/cilantro.png" width="200" alt="A bunch of fresh cilantro">
+            </a>
         </div>
     </div>
     </main>
+    <script>
+        // side nav window 
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const content = document.querySelector('.content');
+
+        menuButton.addEventListener('click', function() {
+            sideMenu.classList.toggle('active');
+            content.classList.toggle('shifted-content');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!sideMenu.contains(event.target) && event.target !== menuButton) {
+                sideMenu.classList.remove('active');
+                content.classList.remove('shifted-content');
+            }
+        });
+
+        $(document).ready(function() {
+            $('[data-fancybox="sandwich-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('[data-fancybox="pasta-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('[data-fancybox="ingredients-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+    </script>
 </body>
 </html>
