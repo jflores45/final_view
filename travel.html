@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <main class="content">
+    <div id="menuButton" class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <br>
+        <!-- Side menu -->
+        <div id="sideMenu" class="side-menu">
+            <ul>
+                <li><a href="#top">Main</a></li>
+                <li><a href="#js">Jungfrau Switzerland</a></li>
+                <li><a href="#zion">Zion National Park</a></li>
+                <li><a href="#chicago">Chicago</a></li>
+                <li><a href="#rome">Rome, Italy</a></li>
+            </ul>
+        </div>
     <nav>
         <ul>
             <li><a href="pets.html">Pets</a></li>
@@ -15,9 +36,10 @@
             <li><a href="recipes.html">Recipes</a></li>
         </ul>
     </nav>
-<main>
+
     <a href = "" class = "skip"> skip to main </a>
-<div class="line">
+
+<div class="line" id = "js">
     <br><br><br><br><br>
 <h1> Travel </h1>
 <br><br>
@@ -33,70 +55,92 @@
 <h2>Photo Gallery</h2>
 
 <figure>
-    <img src=images/jungfrau-summit.jpeg width = "200" alt="Tourists can take the train and elevator up to that building on summit">
+    <a data-fancybox="jungfrau-gallery" href="images/jungfrau-summit.jpeg" data-caption="Tourists can take the train and elevator up to that building on summit">
+        <img src="images/jungfrau-summit.jpeg" width="200" alt="Tourists can take the train and elevator up to that building on summit">
+    </a>
     <figcaption>Jungfrau building summit</figcaption>
 </figure>
 
 <figure>
-    <img src=images/jungfrau_train.jpg width = "200" alt="Train on railway that takes you to the top of the summit">
+    <a data-fancybox="jungfrau-gallery" href="images/jungfrau_train.jpg" data-caption="Train on railway that takes you to the top of the summit">
+        <img src="images/jungfrau_train.jpg" width="200" alt="Train on railway that takes you to the top of the summit">
+    </a>
     <figcaption>Jungfrau train</figcaption>
 </figure>
 
 <figure>
-    <img src=images/jungfrau_lodging.jpg width = "200" alt="Houses located in Jungfrau for people to stay at">
+    <a data-fancybox="jungfrau-gallery" href="images/jungfrau_lodging.jpg" data-caption="Houses located in Jungfrau for people to stay at">
+        <img src="images/jungfrau_lodging.jpg" width="200" alt="Houses located in Jungfrau for people to stay at">
+    </a>
     <figcaption>Lodging in Jungfrau</figcaption>
 </figure>
 
 <figure>
-    <img src=images/jungfrau_water.jpg width = "200" alt="Body of water located in Jungfrau fun for swimming">
+    <a data-fancybox="jungfrau-gallery" href="images/jungfrau_water.jpg" data-caption="Body of water located in Jungfrau fun for swimming">
+        <img src="images/jungfrau_water.jpg" width="200" alt="Body of water located in Jungfrau fun for swimming">
+    </a>
     <figcaption>Lake in Jungfrau</figcaption>
 </figure>
 
 <figure>
-    <img src=images/jungfrau_lookout.jpg width = "200" alt="Tourists can go to the spot to look out over the country">
+    <a data-fancybox="jungfrau-gallery" href="images/jungfrau_lookout.jpg" data-caption="Tourists can go to the spot to look out over the country">
+        <img src="images/jungfrau_lookout.jpg" width="200" alt="Tourists can go to the spot to look out over the country">
+    </a>
     <figcaption>Lookout point at Jungfrau</figcaption>
 </figure>
+
 
 <!-- Daniel Saltzman -->
 </div>
 
-<div class="line">
+<div class="line" id = "zion">
     <h2>Zion National Park</h2>
     <img src="images/Zion_River.jpg" alt="Zion River" width="400" height="400">
     <img src="images/river.gif" class = "gif-class" alt=" River" width="400" height="400">
     <h3>Geographical Location: North America</h3>
 
-    <p>Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for its sandstone cliffs, deep canyons, and vast mesas, giving it a unique beauty that everyone should try to experience . Along with this Zion offers a wide variety of Flora and Fauna that differs each season making it a hot destination all year round.</p>
+    <p>Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for its sandstone cliffs, deep canyons, and vast mesas, giving it a unique beauty that everyone should try to experience. Along with this Zion offers a wide variety of Flora and Fauna that differs each season making it a hot destination all year round.</p>
     <p>Having over 112 trails available to hike, walk, and even camp at, people from all over the world are traveling to Zion to see just how amazing it truly is. With trails that range from riverside walks all the way to hikes that have you scaling long bluffs to reach a peak, Zion has something that every outdoorsman can enjoy. However it is not all sunshines and rainbows, and there are dangers that come with these trails that all hikers should read and learn about before their expedition.</p>
     <h3>Photo Gallery</h3>
     <figure>
-        <img src="images/Zion_Angels_Landing.jpg" alt="Angels Landing hike from afar" width="200" height="200">
-        <figcaption>One of the most popular (and dangerous) hikes Zion has to offer </figcaption>
+        <a data-fancybox="zion-gallery" href="images/Zion_Angels_Landing.jpg" data-caption="One of the most popular (and dangerous) hikes Zion has to offer">
+            <img src="images/Zion_Angels_Landing.jpg" width="200" alt="One of the most popular (and dangerous) hikes Zion has to offer">
+        </a>
+        <figcaption>Angels Landing hike from afar</figcaption>
     </figure>
-
+    
     <figure>
-        <img src="images/Zion_Large_Canyon.jpg" alt="Deep canyon in the summer" width="200" height="200">
+        <a data-fancybox="zion-gallery" href="images/Zion_Large_Canyon.jpg" data-caption="Deep canyon in the summer">
+            <img src="images/Zion_Large_Canyon.jpg" width="200" alt="Deep canyon in the summer">
+        </a>
         <figcaption>A typical day in Zion</figcaption>
     </figure>
-
+    
     <figure>
-        <img src="images/Zion_River_Tunnel.jpg" alt="Water tunnel" width="200" height="200">
+        <a data-fancybox="zion-gallery" href="images/Zion_River_Tunnel.jpg" data-caption="Water tunnel">
+            <img src="images/Zion_River_Tunnel.jpg" width="200" alt="Water tunnel">
+        </a>
         <figcaption>Thousands of years of erosion have created beautiful water tunnels such as this one</figcaption>
     </figure>
-
+    
     <figure>
-        <img src="images/Zion_River_Walk.jpg" alt="River Walk" width="200" height="200">
-        <figcaption>A popular river hike that everyone loves on a hot summer day </figcaption>
+        <a data-fancybox="zion-gallery" href="images/Zion_River_Walk.jpg" data-caption="River Walk">
+            <img src="images/Zion_River_Walk.jpg" width="200" alt="River Walk">
+        </a>
+        <figcaption>A popular river hike that everyone loves on a hot summer day</figcaption>
     </figure>
-
+    
     <figure>
-        <img src="images/Zion_Winter.jpg" alt="Zion Winter" width="200" height="200">
+        <a data-fancybox="zion-gallery" href="images/Zion_Winter.jpg" data-caption="Zion in the winter offers different but just as amazing views">
+            <img src="images/Zion_Winter.jpg" width="200" alt="Zion in the winter offers different but just as amazing views">
+        </a>
         <figcaption>Zion in the winter offers different but just as amazing views</figcaption>
     </figure>
+    
     <!-- Brady Haisfield -->
 </div>
 
-<div class="line">
+<div class="line" id ="chicago">
     <h2>Chicago</h2>
 
     <img src="images/chicago_river_north.jpg" width="400" alt="Chicago River North">
@@ -108,29 +152,37 @@
 
     <h3>Photo Gallery</h3>
     <figure>
-        <img src="images/chicago_navy_pier.jpeg" width="200" alt="Navy Pier in Chicago">
+        <a data-fancybox="chicago-gallery" href="images/chicago_navy_pier.jpeg">
+            <img src="images/chicago_navy_pier.jpeg" width="200" alt="Navy Pier in Chicago">
+        </a>
         <figcaption>Navy Pier is one of the city's most popular tourist attractions.</figcaption>
     </figure>
 
     <figure>
-        <img src="images/chicago_millenium_park.jpeg" width="200" alt="Millennium Park in Chicago">
+        <a data-fancybox="chicago-gallery" href="images/chicago_millenium_park.jpeg">
+            <img src="images/chicago_millenium_park.jpeg" width="200" alt="Millennium Park in Chicago">
+        </a>
         <figcaption>Millennium Park is a modern gathering place in the heart of downtown.</figcaption>
     </figure>
 
     <figure>
-        <img src="images/chicago_grant_park.jpeg" width="200" alt="Grant Park in Chicago">
+        <a data-fancybox="chicago-gallery" href="images/chicago_grant_park.jpeg">
+            <img src="images/chicago_grant_park.jpeg" width="200" alt="Grant Park in Chicago">
+        </a>
         <figcaption>Grant Park is often referred to as "Chicago's front yard."</figcaption>
     </figure>
 
     <figure>
-        <img src="images/chicago_cloud_gate.jpg" width="200" alt="Cloud Gate in Chicago">
+        <a data-fancybox="chicago-gallery" href="images/chicago_cloud_gate.jpg">
+            <img src="images/chicago_cloud_gate.jpg" width="200" alt="Cloud Gate in Chicago">
+        </a>
         <figcaption>Cloud Gate, also known as the 'Bean,' is one of the city's most iconic sculptures.</figcaption>
     </figure>
     <!-- name -->
 </div>
 
 
-<div>
+<div id="rome">
     <h2>Rome, Italy</h2>
     <img src="images/rome_gif.gif" class="gif-class" width="400" alt="Rome along the Tiber River.">
 
@@ -144,35 +196,97 @@
 
     <h3>Photo Gallery</h3>
     <figure>
-        <img src = "images/rome_map.jpeg" width = "200" alt = "Simple depiction of the location of Rome within Italy.">
-        <figcaption>Rome is located in the western-central region of Italy, about 15 miles inland from the neighboring Tyrrhenian Sea. </figcaption>
+        <a data-fancybox="rome-gallery" href="images/rome_map.jpeg">
+            <img src="images/rome_map.jpeg" width="200" alt="Simple depiction of the location of Rome within Italy.">
+        </a>
+        <figcaption>Rome is located in the western-central region of Italy, about 15 miles inland from the neighboring Tyrrhenian Sea.</figcaption>
     </figure>
 
     <figure>
-        <img src = "images/rome_map_2.jpeg" width = "200" alt = "Map portraying important attractions and landmarks as well as the layout of the city.">
-        <figcaption>Nested within the Tiber river, the seven hills of Rome both give rise to another nickname and mark the ancient boundaries of the city. </figcaption>
+        <a data-fancybox="rome-gallery" href="images/rome_map_2.jpeg">
+            <img src="images/rome_map_2.jpeg" width="200" alt="Map portraying important attractions and landmarks as well as the layout of the city.">
+        </a>
+        <figcaption>Nested within the Tiber river, the seven hills of Rome both give rise to another nickname and mark the ancient boundaries of the city.</figcaption>
     </figure>
     
+    <figure>
+        <a data-fancybox="rome-gallery" href="images/rome_colosseum.jpeg">
+            <img src="images/rome_colosseum.jpeg" width="200" alt="Peaceful image of Roman Colosseum at sundown.">
+        </a>
+        <figcaption>Built in 80 AD, the Colosseum was built as an amphitheater for entertainment and hosted gladiatorial combat and animal fights for over 400 years.</figcaption>
+    </figure>
 
     <figure>
-        <img src = "images/rome_colosseum.jpeg" width = "200" alt = "Peaceful image of Roman Colosseum at sundown.">
-        <figcaption>Built in 80 AD, the Colosseum was built as an amphitheater for entertainment, and hosted gladiatorial combat and animal fights for over 400 years. </figcaption>
-    </figure>
-
-    <figure>
-        <img src = "images/rome_catacombs.jpeg" width = "200" alt = "Arched, partially lit underground tunnels comprise the Catacombs of Rome.">
-        <figcaption>Because of ancient Roman law dictating the deceased not to be buried within the city, the labyrinthian tunnels of the Catacombs of Rome stretch for over 12 miles outside city limits. </figcaption>
+        <a data-fancybox="rome-gallery" href="images/rome_catacombs.jpeg">
+            <img src="images/rome_catacombs.jpeg" width="200" alt="Arched, partially lit underground tunnels comprise the Catacombs of Rome.">
+        </a>
+        <figcaption>Because of ancient Roman law dictating the deceased not to be buried within the city, the labyrinthian tunnels of the Catacombs of Rome stretch for over 12 miles outside city limits.</figcaption>
     </figure>
     
     <figure>
-        <img src = "images/rome_pantheon.jpeg" width = "200" alt = "Painting of the interior of the Pantheon.">
-        <figcaption>The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns.  </figcaption>
+        <a data-fancybox="rome-gallery" href="images/rome_pantheon.jpeg">
+            <img src="images/rome_pantheon.jpeg" width="200" alt="Painting of the interior of the Pantheon.">
+        </a>
+        <figcaption>The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns.</figcaption>
     </figure>
-    
     <!-- Iris Ding --> 
 
 </div>
 </main>
+<script>
+    // side nav window 
+    const menuButton = document.getElementById('menuButton');
+    const sideMenu = document.getElementById('sideMenu');
+    const content = document.querySelector('.content');
+
+    menuButton.addEventListener('click', function() {
+        sideMenu.classList.toggle('active');
+        content.classList.toggle('shifted-content');
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!sideMenu.contains(event.target) && event.target !== menuButton) {
+            sideMenu.classList.remove('active');
+            content.classList.remove('shifted-content');
+        }
+    });
+    $(document).ready(function() {
+            $('[data-fancybox="jungfrau-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+    $(document).ready(function() {
+        $('[data-fancybox="zion-gallery"]').fancybox({
+            loop: true, // To loop back to the first image after the last one
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true // To prevent downloading images
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="chicago-gallery"]').fancybox({
+            loop: true, // To loop back to the first image after the last one
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true // To prevent downloading images
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="rome-gallery"]').fancybox({
+            loop: true, // To loop back to the first image after the last one
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true // To prevent downloading images
+            }
+        });
+    });
+</script>
 </body>
 </html>
 
