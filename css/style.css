@@ -1,6 +1,6 @@
 body {
-    background-color: #aea196;
-    /* background-color: #d0c7c2; */
+    /* background-color: #aea196; */
+    background-color: #cbc5bf;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: rgb(0, 0, 10);
     font-size: 30px;
@@ -107,12 +107,82 @@ nav a:active {
   animation: spin 1s linear; /* Apply the 'spin' animation */
 }
 
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0; /* Adjusted to the left side */
+  /* background-color:#aea196; */
+  background-color:#67625c;
+  overflow-x: hidden;
+  transition: 0.5s; /* Adjust the transition speed as needed */
+  z-index: 1; /* Ensures the menu is on top of other elements */
+}
+
+.content {
+  transition: margin-right 0.5s; /* Adjust the transition speed as needed */
+}
+
+.shifted-content {
+  margin-right: 200px; /* Adjust the width to fit the side menu */
+}
+
+.side-menu ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.side-menu ul li {
+  padding: 15px 15px;
+  
+}
+.side-menu ul li a {
+  color: #e7e2e2; /* Change text color */
+  text-decoration: none; /* Remove link underline */
+}
+
+#closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Toggle active state for side menu */
+.side-menu.active {
+  width: 200px; /* Adjust the width as needed */
+}
+
+
 /* Define the 'spin' animation */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
+/* Tablet view  */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-color: rgb(183, 186, 222);
+    /* font-size: 25px; */
+  }
+}
+/* Mobile view */
 @media only screen and (max-width: 600px) {
   .grid {
     display: grid;
