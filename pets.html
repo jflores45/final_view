@@ -4,22 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <main>
+    <main class="content">
+        <div id="menuButton" class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <br>
+        <!-- Side menu -->
+        <div id="sideMenu" class="side-menu">
+            <ul>
+                <li><a href="#top">Main</a></li>
+                <li><a href="#luna">Luna</a></li>
+                <li><a href="#finn">Finn</a></li>
+                <li><a href="#yugi">Yugi</a></li>
+                <li><a href="#carlos">Carlos</a></li>
+                <li><a href="#Milktea">Milktea</a></li>
+                <li><a href="#Honey">Honey</a></li>
+                <li><a href="#Bo">Bo</a></li>
+                <!-- Add other pet names as required -->
+            </ul>
+        </div>
         <nav>
             <ul>
-                <li class="si-399">SI 399</li>
+                <li id="top" class="si-399">SI 399</li>
                 <li><a href="pets.html">Pets</a></li>
                 <li><a href="travel.html">Travel</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
             </ul>
         </nav>
+      
         <br><br><br><br><br>
         <h1>Pets</h1>
-        <div class="line">
+        <div class="line" id="luna">
             <a href = "" class = "skip"> skip to main </a>
             <h2>Luna</h2>
             <img src="images/luna.PNG" alt= "Mini German shepherd sunbathing" width = "400">
@@ -28,50 +52,62 @@
             <h3>Photo Gallery</h3>
             <div class="grid">
                 <div class="grid-item">
-                    <img id="item_1" src="images/luna_puppy.PNG" alt="Luna as a puppy">
+                    <a href="images/luna_puppy.PNG" data-fancybox="luna-gallery" data-title="Luna as a puppy">
+                        <img src="images/luna_puppy.PNG" alt="Luna as a puppy">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img id="item_2" src="images/luna_napping.PNG" alt="Luna’s afternoon nap">
+                    <a href="images/luna_napping.PNG" data-fancybox="luna-gallery" data-title="Luna’s afternoon nap">
+                        <img src="images/luna_napping.PNG" alt="Luna’s afternoon nap">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img id="item_3" src="images/luna_friends.PNG" alt="Luna, Lobi, Laith">
+                    <a href="images/luna_friends.PNG" data-fancybox="luna-gallery" data-title="Luna, Lobi, Laith">
+                        <img src="images/luna_friends.PNG" alt="Luna, Lobi, Laith">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img id="item_4" src="images/luna_evil.PNG" alt="Luna death stare">
+                    <a href="images/luna_evil.PNG" data-fancybox="luna-gallery" data-title="Luna death stare">
+                        <img src="images/luna_evil.PNG" alt="Luna death stare">
+                    </a>
                 </div>
             </div>
+            <button id="custom-close-button" style="display: none;">Close</button>
             <h3>Likes</h3>
             <ul>
                 <li>Chicken</li>
                 <li>The park</li>
                 <li>Belly rubs</li>
             </ul>
+            
             <!-- Jahaira Flores -->
         </div>
 
-        <div class="line">
+        <div class="line" id="finn">
             <h2> Finn </h2> 
             <img src ="images/Finn_Halloween.jpg" width = "400" alt = "Finn wears a bat costume for halloween"> 
             
             <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might as well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy and chaotic. </p>
             <p>Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet office because he’ll suddenly act like he was never a house cat for 7 years.</p> 
             <h3>Photo Gallery </h3>
-                <div class="grid">
-            <div class="grid-item">
-                <img src="images/Finn_Shlumped.jpg" alt="Finn is exhausted after a long day of doing absolutely nothing">
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/Finn_Shlumped.jpg" data-fancybox="finn-gallery" data-title="Finn is exhausted after a long day of doing absolutely nothing">
+                        <img src="images/Finn_Shlumped.jpg" alt="Finn is exhausted after a long day of doing absolutely nothing">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Finn_Kitten.jpg" data-fancybox="finn-gallery" data-title="A few days after we adopted Finn. He’s just posing for the camera">
+                        <img src="images/Finn_Kitten.jpg" alt="A few days after we adopted Finn. He’s just posing for the camera">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Finn_GOAT.jpg" data-fancybox="finn-gallery" data-title="Finn dressed up as the king he is for Halloween">
+                        <img src="images/Finn_GOAT.jpg" alt="Finn dressed up as the king he is for Halloween">
+                    </a>
+                </div>
             </div>
-            <div class="grid-item">
-                <img src="images/Finn_Kitten.jpg" alt="A few days after we adopted Finn. He’s just posing for the camera">
-            </div>
-            <!-- <div class="grid-item">
-                <video width="200" controls>
-                <source src="images/Finn_jumpscare.mov">
-                </video>
-            </div> -->
-            <div class="grid-item">
-                <img src="images/Finn_GOAT.jpg" alt="Finn dressed up as the king he is for Halloween">
-            </div>
-            </div>
+      
 
             <h3>Likes</h3>
             <ul>
@@ -83,7 +119,7 @@
              <!-- Lauren Rodriguez -->
         </div>
 
-        <div class="line">
+        <div class="line" id="yugi">
             <h2>Yugi</h2>
             <img src = "images/yugi_sleepa.jpg" alt = "Tan chihuahua sleeping on a black pillow" width="400">
             <p>
@@ -95,16 +131,24 @@
             <h3>Photo Gallery</h3>
             <div class="grid">
                 <div class="grid-item">
-                    <img src="images/yugi_sun.PNG" alt="Yugi sunbathing">
+                    <a href="images/yugi_sun.PNG" data-fancybox="yugi-gallery" data-title="Yugi sunbathing">
+                        <img src="images/yugi_sun.PNG" alt="Yugi sunbathing">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/yugi_eyes.HEIC" alt="A close up photo of natural light highlighting Yugi’s eyes." >
+                    <a href="images/yugi_eyes.HEIC" data-fancybox="yugi-gallery" data-title="A close up photo of natural light highlighting Yugi’s eyes.">
+                        <img src="images/yugi_eyes.HEIC" alt="A close up photo of natural light highlighting Yugi’s eyes.">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/yugi_nom.JPG" alt="Yugi chomping on a finger" >
+                    <a href="images/yugi_nom.JPG" data-fancybox="yugi-gallery" data-title="Yugi chomping on a finger">
+                        <img src="images/yugi_nom.JPG" alt="Yugi chomping on a finger">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/yugi_baby.JPG" alt="Yugi as a chubby puppy sleeping" >
+                    <a href="images/yugi_baby.JPG" data-fancybox="yugi-gallery" data-title="Yugi as a chubby puppy sleeping">
+                        <img src="images/yugi_baby.JPG" alt="Yugi as a chubby puppy sleeping">
+                    </a>
                 </div>
             </div>
             
@@ -117,7 +161,7 @@
 
             <!-- Aileen Gonzalez -->
         </div>
-        <div class="line">
+        <div class="line" id="carlos">
             <h2>Carlos</h2>
             <img src="images/carlos.JPG" class = "thumbnail" width = "400" alt="Blue parakeet crouching about to fly">
             <p>Carlos is a blue parakeet/budgerigar that my older sister adopted from her friend in high school. 
@@ -129,19 +173,20 @@
                 after we named them. At night, Carlos always sleeps on her favorite yellow swing and will wake up
                  in the same spot every morning in the upstairs of her cage ready to come out and play.</p>
             <h3>Photo Gallery</h3>
-            <div class="grid">
-                <div class="grid-item">
-                    <img src="images/carlos_preening.JPG" alt="Blue parakeet preening feathers">
-                </div>
-                <div class="grid-item">
-                    <img src="images/carlos_einstein.JPG" alt="Blue parakeet standing with green parakeet" >
-                </div>
-                <div class="grid-item">
-                    <img src="images/carlos_preening.JPG" alt="Blue parakeet standing on a girl's shoulder" >
-                </div>
-                <div class="grid-item">
-                    <img src="images/carlos_millet.jpeg" alt="Blue parakeet eating millet" >
-                </div>
+            <div class="grid-item">
+                <a href="images/carlos_einstein.JPG" data-fancybox="carlos-gallery" data-caption="Blue parakeet standing with green parakeet">
+                    <img src="images/carlos_einstein.JPG" alt="Blue parakeet standing with green parakeet">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/carlos_preening.JPG" data-fancybox="carlos-gallery" data-caption="Blue parakeet standing on a girl's shoulder">
+                    <img src="images/carlos_preening.JPG" alt="Blue parakeet standing on a girl's shoulder">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/carlos_millet.jpeg" data-fancybox="carlos-gallery" data-caption="Blue parakeet eating millet">
+                    <img src="images/carlos_millet.jpeg" alt="Blue parakeet eating millet">
+                </a>
             </div>
             
             <h3>Likes</h3>
@@ -153,7 +198,7 @@
                 <!--Julia Zhang-->
         </div>
 
-        <div class="line">
+        <div class="line" id="Milktea">
             <h2>Milktea</h2>
             <img width="400" src="images/Main.JPG" alt="Milktea taking nap">
             <p>Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything dropped on the ground. She makes it clear when she has a demand of any sort by complaining in a loud, distinguished manner. If what she says could be translated, it probably would be, “This is atrocious, the water container has been empty for the 3rd time this week. I want to see the manager.”.</p>
@@ -161,18 +206,26 @@
             <h3>Photo Gallery</h3>
             <div class="grid">
                 <div class="grid-item">
-                    <img src="images/Milktea_comfy.jpg" alt="Milktea enjoying a good massage">
+                    <a href="images/Milktea_comfy.jpg" data-fancybox="milktea-gallery" data-caption="Milktea enjoying a good massage">
+                        <img src="images/Milktea_comfy.jpg" alt="Milktea enjoying a good massage">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/Milktea_laptop.JPG" alt="Baby Milktea On Laptop">
+                    <a href="images/Milktea_laptop.JPG" data-fancybox="milktea-gallery" data-caption="Baby Milktea On Laptop">
+                        <img src="images/Milktea_laptop.JPG" alt="Baby Milktea On Laptop">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at the mirror">
+                    <a href="images/Milktea_mirror.jpeg" data-fancybox="milktea-gallery" data-caption="Milktea sighing at the mirror">
+                        <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at the mirror">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/Milktea_catbox.JPG" alt="Milktea in Catbox position">
+                    <a href="images/Milktea_catbox.JPG" data-fancybox="milktea-gallery" data-caption="Milktea in Catbox position">
+                        <img src="images/Milktea_catbox.JPG" alt="Milktea in Catbox position">
+                    </a>
                 </div>
-            </div>
+            </div>            
             
             <h3>Likes</h3>
             <ul>
@@ -182,7 +235,7 @@
             </ul>
             <!-- Olivia Ren -->
         </div>
-        <div class="line">
+        <div class="line" id="Honey">
             <h2>Honey</h2>
             <img width="400" src="images/honey_main.jpeg" alt="Honey is a retriever with honey brown fur.">
             <p>Honeys favorite thing in the world is swimming. Even if it is the middle of January and half of the lake is frozen, Honey will be in the water. She is a smart swimmer, so when my brother and I go underwater, she will follow our air bubbles and be waiting for us when we come up for air.</p>
@@ -190,18 +243,27 @@
             <h3>Photo Gallery</h3>
             <div class="grid">
                 <div class="grid-item">
-                    <img src="images/honey_rock.jpeg" alt="Honey playing with a rock">
+                    <a href="images/honey_rock.jpeg" data-fancybox="honey-gallery" data-caption="Honey playing with a rock">
+                        <img src="images/honey_rock.jpeg" alt="Honey playing with a rock">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/honey_sleeping.jpeg" alt="Honey taking a nap">
+                    <a href="images/honey_sleeping.jpeg" data-fancybox="honey-gallery" data-caption="Honey taking a nap">
+                        <img src="images/honey_sleeping.jpeg" alt="Honey taking a nap">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/honey_smiling.jpeg" alt="Honey smiling">
+                    <a href="images/honey_smiling.jpeg" data-fancybox="honey-gallery" data-caption="Honey smiling">
+                        <img src="images/honey_smiling.jpeg" alt="Honey smiling">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/honey_swimming.jpeg" alt="Honey swimming">
+                    <a href="images/honey_swimming.jpeg" data-fancybox="honey-gallery" data-caption="Honey swimming">
+                        <img src="images/honey_swimming.jpeg" alt="Honey swimming">
+                    </a>
                 </div>
             </div>
+            
             
             <h3>Likes</h3>
             <ul>
@@ -212,6 +274,7 @@
             <!-- Abbie Tooman -->
         </div>
         <div>
+            <div id="Bo">
             <h2>Bo</h2>
             <img width="400" src="images/bo.jpg" alt="Black and white dog sitting on grass.">
             <p> Bo is a Portuguese Water Dog with black and white fur. His paws are white too, so they always get dirty when outside. He is 12 years old, but he still likes to run around outside a lot. </p>
@@ -220,18 +283,27 @@
             <h3>Photo Gallery</h3>
             <div class="grid">
                 <div class="grid-item">
-                    <img src="images/bo_walking.jpg" alt="Black and white dog walking on grass">
+                    <a href="images/bo_walking.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog walking on grass">
+                        <img src="images/bo_walking.jpg" alt="Black and white dog walking on grass">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/bo_and_friend.jpg" alt="Black and white dog sitting by other black dog">
+                    <a href="images/bo_and_friend.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog sitting by other black dog">
+                        <img src="images/bo_and_friend.jpg" alt="Black and white dog sitting by other black dog">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/bo_plane.jpg" alt="Black and white dog in front of airplane">
+                    <a href="images/bo_plane.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog in front of airplane">
+                        <img src="images/bo_plane.jpg" alt="Black and white dog in front of airplane">
+                    </a>
                 </div>
                 <div class="grid-item">
-                    <img src="images/bo_chair.jpg" alt="Black and white dog sitting on top of a chair">
+                    <a href="images/bo_chair.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog sitting on top of a chair">
+                        <img src="images/bo_chair.jpg" alt="Black and white dog sitting on top of a chair">
+                    </a>
                 </div>
-            </div>            
+            </div>
+        </div>
             <h3>Likes</h3>
             <ul>
                 <li>Walks</li>
@@ -240,7 +312,92 @@
             </ul>
             <!-- Joseph Schaubroeck -->
         </div>
-        
     </main>
+
+    <script>
+        // side nav window 
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const content = document.querySelector('.content');
+
+        menuButton.addEventListener('click', function() {
+            sideMenu.classList.toggle('active');
+            content.classList.toggle('shifted-content');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!sideMenu.contains(event.target) && event.target !== menuButton) {
+                sideMenu.classList.remove('active');
+                content.classList.remove('shifted-content');
+            }
+        });
+
+        // fancybox 
+
+        $(document).ready(function() {
+            $('[data-fancybox="luna-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('[data-fancybox="finn-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('[data-fancybox="yugi-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+        $('[data-fancybox="carlos-gallery"]').fancybox({
+            loop: true, // To loop back to the first image after the last one
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true // To prevent downloading images
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="milktea-gallery"]').fancybox({
+            loop: true,
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="honey-gallery"]').fancybox({
+            loop: true,
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="bo-gallery"]').fancybox({
+            loop: true,
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true
+            }
+        });
+    });
+    </script>
+    
 </body>
 </html>
