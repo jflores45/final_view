@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recipes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href = "css/style.css"> 
+    <link rel= "icon" href= "images/I3.png">
+    <link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Exo+2">
 </head>
 <body>
     <main class="content">
@@ -28,20 +30,22 @@
                 </ul>
             </div>
         <nav>
-            <ul>
-                <li> <a href= "pets.html"> Pets</a> </li>
-                <li> <a href= "travel.html">Travel</a> </li>
-                <li> <a href= "recipes.html">Recipes</a> </li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a href="pets.html" class="nav-link">Pets</a></li>
+                    <li><a href="travel.html" class="nav-link">Travel</a></li>
+                    <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+                </ul>
+            </nav>
         </nav>
-        <br><br><br><br><br>
+        <!-- <br><br><br><br><br> -->
         <h1> Recipes </h1>
         <a href = "" class = "skip"> skip to main </a>
         <div style="position: relative; right: -50px;">
 
         <div class="line" id="sandwich">
             <h2>Spicy Fried Chicken Sandwich</h2>
-            <h4>Origin: American</h4>
+            <h3>Origin: American</h3>
             <h4>Source: Original recipe!</h4>
             <h4>Category: Main Dish</h4>
 
@@ -94,6 +98,7 @@
                 <li>Combine the buns, toppings, and chicken and serve!</li>
             </ol>
             <h3>Additional Food Images</h3>
+            <div class="grid">
             <a href="images/chicken_breast_marinade.jpeg" data-fancybox="sandwich-gallery" data-caption="Chicken breast will be marinated for one to two hours.">
                 <img src="images/chicken_breast_marinade.jpeg" width="200" alt="Chicken breast will be marinated for one to two hours.">
             </a>
@@ -103,13 +108,14 @@
             <a href="images/final_product_chicksandwich.jpeg" data-fancybox="sandwich-gallery" data-caption="Your succulent final product!">
                 <img src="images/final_product_chicksandwich.jpeg" alt="Your succulent final product!">
             </a>
+            </div>
             <!--Johann Tsegay-->
             
         </div>
-        <br><br>
+        <br>
         <div class="line" id="pasta">
             <h2>Chicken Alfredo Pasta</h2>
-            <h4>Origin: Italy</h4>
+            <h3>Origin: Italy</h3>
             <h4>Source: Grandma's Kitchen</h4>
             <h4>Category: Main Dish</h4>
 
@@ -140,6 +146,7 @@
             </ol>
         
             <h3>Additional Food images</h3>
+            <div class="grid">
             <a href="images/chicken_breast.png" data-fancybox="pasta-gallery" data-caption="Grilled chicken breasts">
                 <img src="images/chicken_breast.png" width="200" alt="Grilled chicken breasts">
             </a>
@@ -150,10 +157,11 @@
                 <img src="images/heavy_cream.png" width="200" alt="A carton of heavy cream">
             </a>
         </div>
-        <br><br>
+     </div>
+        <br>
         <div id="tacos">
             <h2>Vegan Tacos</h2>   
-            <h4>Origin: Mexico</h4>
+            <h3>Origin: Mexico</h3>
             <h4>Source: Vegan Cookbook</h4>
             <h4>Category: Main Dish</h4>            
             
@@ -185,6 +193,7 @@
             </ol>
         
             <h3>Additional Food images</h3>
+            <div class="grid">
             <a href="images/beans.png" data-fancybox="ingredients-gallery" data-caption="A bowl of beans">
                 <img src="images/beans.png" width="200" alt="A bowl of beans">
             </a>
@@ -194,6 +203,7 @@
             <a href="images/cilantro.png" data-fancybox="ingredients-gallery" data-caption="A bunch of fresh cilantro">
                 <img src="images/cilantro.png" width="200" alt="A bunch of fresh cilantro">
             </a>
+        </div>
         </div>
     </div>
     </main>
@@ -241,7 +251,32 @@
                     protect: true // To prevent downloading images
                 }
             });
+            
         });
+        document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll(".nav-link");
+
+        // Set the "active" class based on the current page URL
+        navLinks.forEach(function(link) {
+            if (window.location.href.includes(link.getAttribute("href"))) {
+                link.classList.add("active");
+            }
+        });
+
+        // Add click event listeners to each navigation link
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function() {
+                // Remove the "active" class from all links
+                navLinks.forEach(function(innerLink) {
+                    innerLink.classList.remove("active");
+                });
+
+                // Add the "active" class to the clicked link
+                link.classList.add("active");
+            });
+        });
+    });
+
     </script>
 </body>
 </html>
