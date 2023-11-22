@@ -8,7 +8,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Travel</title>
+    <link rel= "icon" href= "images/I2.png">
+    <link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Exo+2">
 </head>
 
 <body>
@@ -29,23 +31,25 @@
                 <li><a href="#rome">Rome, Italy</a></li>
             </ul>
         </div>
-    <nav>
-        <ul>
-            <li><a href="pets.html">Pets</a></li>
-            <li><a href="travel.html">Travel</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="pets.html" class="nav-link">Pets</a></li>
+                <li><a href="travel.html" class="nav-link">Travel</a></li>
+                <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+            </ul>
+        </nav>
+        
 
     <a href = "" class = "skip"> skip to main </a>
 
 <div class="line" id = "js">
-    <br><br><br><br><br>
+    <!-- <br><br><br><br><br> -->
 <h1> Travel </h1>
-<br><br>
+<br>
 <h2>Jungfrau Switzerland</h2>
     
 <img src=images/jungfrau-helicopter.gif class = "gif-class" width="400" height="300" alt="Helicoper in Jungfrau.">
+<img src=images/jungfrau-helicopter.png class = "still-image1" width="400" height="300" alt="Helicoper in Jungfrau.">
 <img src=images/jungfrau-summit.jpeg width = "400" height="300" alt="Top of jungfrau">
 
 <h3>Geographical Location: Europe</h3>
@@ -53,7 +57,7 @@
 <p>The scenery consists of valleys, waterfalls, rock walls, and snow peaks. When visiting, it is vital to go on a day with good weather because it enhances the quality of the views. Hiking is very popular at short trails called Grutschalp and Murren. A very common tourist attraction is also exploring the Lauterbrunnen valley.</p>
 
 <h2>Photo Gallery</h2>
-
+<div class="grid">
 <figure>
     <a data-fancybox="jungfrau-gallery" href="images/jungfrau-summit.jpeg" data-caption="Tourists can take the train and elevator up to that building on summit">
         <img src="images/jungfrau-summit.jpeg" width="200" alt="Tourists can take the train and elevator up to that building on summit">
@@ -88,7 +92,7 @@
     </a>
     <figcaption>Lookout point at Jungfrau</figcaption>
 </figure>
-
+</div>
 
 <!-- Daniel Saltzman -->
 </div>
@@ -97,11 +101,13 @@
     <h2>Zion National Park</h2>
     <img src="images/Zion_River.jpg" alt="Zion River" width="400" height="400">
     <img src="images/river.gif" class = "gif-class" alt=" River" width="400" height="400">
+    <img src="images/river.png" class = "still-image2" alt=" River" width="400" height="400">
     <h3>Geographical Location: North America</h3>
 
     <p>Found in southwestern Utah, Zion National Park spreads over 229 square miles. The park is known for its sandstone cliffs, deep canyons, and vast mesas, giving it a unique beauty that everyone should try to experience. Along with this Zion offers a wide variety of Flora and Fauna that differs each season making it a hot destination all year round.</p>
     <p>Having over 112 trails available to hike, walk, and even camp at, people from all over the world are traveling to Zion to see just how amazing it truly is. With trails that range from riverside walks all the way to hikes that have you scaling long bluffs to reach a peak, Zion has something that every outdoorsman can enjoy. However it is not all sunshines and rainbows, and there are dangers that come with these trails that all hikers should read and learn about before their expedition.</p>
     <h3>Photo Gallery</h3>
+    <div class="grid">
     <figure>
         <a data-fancybox="zion-gallery" href="images/Zion_Angels_Landing.jpg" data-caption="One of the most popular (and dangerous) hikes Zion has to offer">
             <img src="images/Zion_Angels_Landing.jpg" width="200" alt="One of the most popular (and dangerous) hikes Zion has to offer">
@@ -136,7 +142,7 @@
         </a>
         <figcaption>Zion in the winter offers different but just as amazing views</figcaption>
     </figure>
-    
+</div>
     <!-- Brady Haisfield -->
 </div>
 
@@ -145,12 +151,13 @@
 
     <img src="images/chicago_river_north.jpg" width="400" alt="Chicago River North">
     <img src="images/chicago_river_north.gif" class = "gif-class" width="400" height = "300" alt="Chicago River North Animated">
-
+    <img src="images/chicago_river_north.png" class = "still-image3" width="400" height = "300" alt="Chicago River North Animated">
     <h3>Geographical Location: United States, Illinois</h3>
     <p>Chicago, known as the Windy City, is the third most populous city in the United States. Located in Illinois, it is famous for its rich history, diverse culture, and vibrant arts scene.</p>
     <p>Tourists and locals alike should exercise caution in certain areas of the city. For insights into challenges faced by Chicago, you can visit <a href="https://www.facebook.com/groups/ChicagoSafetyConcerns/">Chicago Safety Concerns</a> or <a href="https://www.instagram.com/chicagoscanner/">Chicago Scanner on Instagram</a>.</p>
 
     <h3>Photo Gallery</h3>
+    <div class="grid">
     <figure>
         <a data-fancybox="chicago-gallery" href="images/chicago_navy_pier.jpeg">
             <img src="images/chicago_navy_pier.jpeg" width="200" alt="Navy Pier in Chicago">
@@ -178,15 +185,16 @@
         </a>
         <figcaption>Cloud Gate, also known as the 'Bean,' is one of the city's most iconic sculptures.</figcaption>
     </figure>
+</div>
     <!-- name -->
 </div>
 
 
 <div id="rome">
     <h2>Rome, Italy</h2>
-    <img src="images/rome_gif.gif" class="gif-class" width="400" alt="Rome along the Tiber River.">
-
     <img src = "images/rome_picture.jpeg" width = "400" alt = "The Streets of Rome">
+    <img src="images/rome_gif.gif" class="gif-class" width="400" alt="Rome along the Tiber River.">
+    <img src="images/rome_gif.png" class="still-image4" width="400" alt="Rome along the Tiber River.">
 
     <h3>Geographical Location: Europe</h3>
     <p>The national capital of Italy remains a historical and political hub today. Nicknamed the “Eternal City,” Rome is considered the origination of the Catholic Church and Roman civilization central to the development of the Western World. Divided into 22 walled rioni (districts) surrounded by 35 quartieri urbani (urban sectors) that are surrounded by 6 large suburbi (suburbs), the city, just larger than New York City at an area of 496 mi2,  is home to 2.8 million residents. Its economy runs on the tourism and services industries, the latter mostly in government jobs.
@@ -195,6 +203,7 @@
     </p>
 
     <h3>Photo Gallery</h3>
+    <div class="grid">
     <figure>
         <a data-fancybox="rome-gallery" href="images/rome_map.jpeg">
             <img src="images/rome_map.jpeg" width="200" alt="Simple depiction of the location of Rome within Italy.">
@@ -229,6 +238,7 @@
         </a>
         <figcaption>The largest domed temple built in its time, the interior of the Pantheon is illuminated by natural light flowing through a circular oculus and features colored marble and vast columns.</figcaption>
     </figure>
+</div>
     <!-- Iris Ding --> 
 
 </div>
@@ -286,6 +296,31 @@
             }
         });
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var navLinks = document.querySelectorAll(".nav-link");
+
+    // Set the "active" class based on the current page URL
+    navLinks.forEach(function(link) {
+        if (window.location.href.includes(link.getAttribute("href"))) {
+            link.classList.add("active");
+        }
+    });
+
+    // Add click event listeners to each navigation link
+    navLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+            // Remove the "active" class from all links
+            navLinks.forEach(function(innerLink) {
+                innerLink.classList.remove("active");
+            });
+
+            // Add the "active" class to the clicked link
+            link.classList.add("active");
+        });
+    });
+});
+
 </script>
 </body>
 </html>
