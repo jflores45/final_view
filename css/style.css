@@ -4,6 +4,7 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: rgb(0, 0, 10);
     font-size: 30px;
+    font-family: 'Exo 2', sans-serif;
 }
 h1 {
     text-align: center;
@@ -47,6 +48,9 @@ img{
   margin: 20px;
   border-top-right-radius: 30px;
 } 
+img:hover {
+  border-width: 10px; /* Increase the border width on hover */
+}
  video{
   /* border: 5px solid #ff4500;  Replace #ff4500 with the color of your choice */
   padding: 10px;
@@ -54,11 +58,11 @@ img{
   border-top-right-radius: 30px; 
  }
  
- nav li {
+/* General styles for nav li and nav a */
+nav li {
   display: inline;
-  float: right; /* For floating to the right */
+  float: right;
   margin-right: 20px;
-  
 }
 
 nav a {
@@ -76,9 +80,16 @@ nav a:hover {
 
 /* Style the active link (current page) */
 nav a:active {
-  color:#19304d; /* Change the color for the active link (current page) */
+  color: #19304d;
   font-weight: bold;
-  border: 2px solid #19304d;/* Add a border */
+  border: 2px solid #19304d;
+}
+
+/* Styles for the active link with specific class */
+nav ul li a.nav-link.active {
+  font-weight: bold;
+  color: rgb(109, 109, 109);
+  /* Add any other styles you want for the active link */
 }
 
 .grid {
@@ -104,7 +115,7 @@ nav a:active {
 .si-399 {
   font-size: 50px;
   float:left;
-  animation: spin 1s linear; /* Apply the 'spin' animation */
+  animation: spin 5s linear; /* Apply the 'spin' animation */
 }
 
 .side-menu {
@@ -115,6 +126,7 @@ nav a:active {
   right: 0; /* Adjusted to the left side */
   /* background-color:#aea196; */
   background-color:#67625c;
+  background-image: url('/images/b2.jpg'); 
   overflow-x: hidden;
   transition: 0.5s; /* Adjust the transition speed as needed */
   z-index: 1; /* Ensures the menu is on top of other elements */
@@ -138,7 +150,7 @@ nav a:active {
   
 }
 .side-menu ul li a {
-  color: #e7e2e2; /* Change text color */
+  color: #ffffff; /* Change text color */
   text-decoration: none; /* Remove link underline */
 }
 
@@ -169,17 +181,32 @@ nav a:active {
   width: 200px; /* Adjust the width as needed */
 }
 
-
 /* Define the 'spin' animation */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-/* Tablet view  */
+/* Tablet view */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cascade images with a minimum width of 200px */
+    grid-gap: 10px; /* Spacing between grid items */
+    grid-template-rows: auto; /* Reset grid rows to auto for tablet view */
+  }
+
+  /* Additional styles for the body in tablet view */
   body {
     background-color: rgb(183, 186, 222);
-    /* font-size: 25px; */
+  }
+
+  /* Align the images differently inside the grid */
+  .grid img:nth-child(odd) {
+    align-self: start; /* Align odd images to the top of each grid item */
+  }
+
+  .grid img:nth-child(even) {
+    align-self: end; /* Align even images to the bottom of each grid item */
   }
 }
 /* Mobile view */
@@ -222,13 +249,38 @@ nav a:active {
    display: none;
   }
 }
+.still-image1 {
+  display: none; /* Initially hide the still image */
+}
+.still-image2 {
+  display: none; /* Initially hide the still image */
+}
+.still-image3 {
+  display: none; /* Initially hide the still image */
+}
+.still-image4 {
+  display: none; /* Initially hide the still image */
+}
 
 @media (prefers-reduced-motion: reduce) {
   /* Hide GIFs */
   .gif-class {
     display: none;
   }
+  .still-image1 {
+    display: inline-block; /* or block, depending on your layout */
+  }
+  .still-image2 {
+    display: inline-block; /* or block, depending on your layout */
+  }
+  .still-image3 {
+    display: inline-block; /* or block, depending on your layout */
+  }
+  .still-image4 {
+    display: inline-block; /* or block, depending on your layout */
+  }
   .si-399 {
-    display: none;
+    /* display: none; */
+    transition: margin-right 0;
    }
 }
