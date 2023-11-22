@@ -8,7 +8,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Pets</title>
+    <link rel= "icon" href= "images/I1.png">
+    <link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Exo+2">
 </head>
 <body>
     <main class="content">
@@ -29,19 +31,19 @@
                 <li><a href="#Milktea">Milktea</a></li>
                 <li><a href="#Honey">Honey</a></li>
                 <li><a href="#Bo">Bo</a></li>
-                <!-- Add other pet names as required -->
             </ul>
         </div>
+
         <nav>
             <ul>
                 <li id="top" class="si-399">SI 399</li>
-                <li><a href="pets.html">Pets</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="pets.html" class="nav-link">Pets</a></li>
+                <li><a href="travel.html" class="nav-link">Travel</a></li>
+                <li><a href="recipes.html" class="nav-link">Recipes</a></li>
             </ul>
         </nav>
       
-        <br><br><br><br><br>
+        <!-- <br><br><br><br><br> -->
         <h1>Pets</h1>
         <div class="line" id="luna">
             <a href = "" class = "skip"> skip to main </a>
@@ -397,6 +399,30 @@
             }
         });
     });
+        document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll(".nav-link");
+
+        // Set the "active" class based on the current page URL
+        navLinks.forEach(function(link) {
+            if (window.location.href.includes(link.getAttribute("href"))) {
+                link.classList.add("active");
+            }
+        });
+
+        // Add click event listeners to each navigation link
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function() {
+                // Remove the "active" class from all links
+                navLinks.forEach(function(innerLink) {
+                    innerLink.classList.remove("active");
+                });
+
+                // Add the "active" class to the clicked link
+                link.classList.add("active");
+            });
+        });
+    });
+
     </script>
     
 </body>
