@@ -126,7 +126,7 @@ nav ul li a.nav-link.active {
   right: 0; /* Adjusted to the left side */
   /* background-color:#aea196; */
   background-color:#67625c;
-  background-image: url('images/b2.jpg'); 
+  background-image: url('/images/b2.jpg'); 
   overflow-x: hidden;
   transition: 0.5s; /* Adjust the transition speed as needed */
   z-index: 1; /* Ensures the menu is on top of other elements */
