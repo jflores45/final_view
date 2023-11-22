@@ -1,286 +1,429 @@
-body {
-    /* background-color: #aea196; */
-    background-color: #cbc5bf;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-    color: rgb(0, 0, 10);
-    font-size: 30px;
-    font-family: 'Exo 2', sans-serif;
-}
-h1 {
-    text-align: center;
-    font-size: 50px;
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pets</title>
+    <link rel= "icon" href= "images/I1.png">
+    <link rel= "stylesheet" href= "https://fonts.googleapis.com/css?family=Exo+2">
+</head>
+<body>
+    <main class="content">
+        <div id="menuButton" class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <br>
+        <!-- Side menu -->
+        <div id="sideMenu" class="side-menu">
+            <ul>
+                <li><a href="#top">Main</a></li>
+                <li><a href="#luna">Luna</a></li>
+                <li><a href="#finn">Finn</a></li>
+                <li><a href="#yugi">Yugi</a></li>
+                <li><a href="#carlos">Carlos</a></li>
+                <li><a href="#Milktea">Milktea</a></li>
+                <li><a href="#Honey">Honey</a></li>
+                <li><a href="#Bo">Bo</a></li>
+            </ul>
+        </div>
 
-h2 {
-  font-size: 50px;
-  color: #4b3e3e; 
-}
-.line{
-  border: none; /* Remove default border */
-  border-bottom: 3px solid #4b3e3e; 
-  padding: 50px 0;
-  /* margin: 10px 0;  */
-}
-.skip{
-  position: absolute;
-  top: -40px; /* Move the text 20 pixels up */
-}
-.skip:focus {
-  position: relative;
-  top: 20px;
-}
+        <nav>
+            <ul>
+                <li id="top" class="si-399">SI 399</li>
+                <li><a href="pets.html" class="nav-link">Pets</a></li>
+                <li><a href="travel.html" class="nav-link">Travel</a></li>
+                <li><a href="recipes.html" class="nav-link">Recipes</a></li>
+            </ul>
+        </nav>
+      
+        <!-- <br><br><br><br><br> -->
+        <h1>Pets</h1>
+        <div class="line" id="luna">
+            <a href = "" class = "skip"> skip to main </a>
+            <h2>Luna</h2>
+            <img src="images/luna.PNG" alt= "Mini German shepherd sunbathing" width = "400">
+            <p>Luna is a German shepherd mix and a fireball of energy. Oftentimes, destroying anything in her path she will take and hide all your socks, shoes, and clothes for her to chew on. She loves playing catch at the park, it always gives her the zoomies. </p>
+            <p>Luna is a very jealous, loving, and protective dog. She really embraces her inner chihuahua and will bark at any stranger, car, or noise at night. She makes the perfect guard dog. But she is not at all aggressive. Luna is all bark no bite!</p>
+            <h3>Photo Gallery</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/luna_puppy.PNG" data-fancybox="luna-gallery" data-title="Luna as a puppy">
+                        <img src="images/luna_puppy.PNG" alt="Luna as a puppy">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/luna_napping.PNG" data-fancybox="luna-gallery" data-title="Luna’s afternoon nap">
+                        <img src="images/luna_napping.PNG" alt="Luna’s afternoon nap">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/luna_friends.PNG" data-fancybox="luna-gallery" data-title="Luna, Lobi, Laith">
+                        <img src="images/luna_friends.PNG" alt="Luna, Lobi, Laith">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/luna_evil.PNG" data-fancybox="luna-gallery" data-title="Luna death stare">
+                        <img src="images/luna_evil.PNG" alt="Luna death stare">
+                    </a>
+                </div>
+            </div>
+            <button id="custom-close-button" style="display: none;">Close</button>
+            <h3>Likes</h3>
+            <ul>
+                <li>Chicken</li>
+                <li>The park</li>
+                <li>Belly rubs</li>
+            </ul>
+            
+            <!-- Jahaira Flores -->
+        </div>
 
-h3 {
-  font-size: 40px;
-  color: rgb(66, 61, 68);
-  
-  }
+        <div class="line" id="finn">
+            <h2> Finn </h2> 
+            <img src ="images/Finn_Halloween.jpg" width = "400" alt = "Finn wears a bat costume for halloween"> 
+            
+            <p>Finn is a 7 year old grey cat. I feel like no one really knows cat breeds so I’m just gonna go with grey. He loves doing tricks for treats and his favorite is giving high fives to people. He might as well be a dog as he loves the outdoors and meeting new people. I can only describe him as goofy and chaotic. </p>
+            <p>Finn’s biggest enemy is his vet. I don't know whether or not it’s because his vet is an MSU alum, but he doesn’t like him. He actually has to be prescribed a sedative before he goes to the vet office because he’ll suddenly act like he was never a house cat for 7 years.</p> 
+            <h3>Photo Gallery </h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/Finn_Shlumped.jpg" data-fancybox="finn-gallery" data-title="Finn is exhausted after a long day of doing absolutely nothing">
+                        <img src="images/Finn_Shlumped.jpg" alt="Finn is exhausted after a long day of doing absolutely nothing">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Finn_Kitten.jpg" data-fancybox="finn-gallery" data-title="A few days after we adopted Finn. He’s just posing for the camera">
+                        <img src="images/Finn_Kitten.jpg" alt="A few days after we adopted Finn. He’s just posing for the camera">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Finn_GOAT.jpg" data-fancybox="finn-gallery" data-title="Finn dressed up as the king he is for Halloween">
+                        <img src="images/Finn_GOAT.jpg" alt="Finn dressed up as the king he is for Halloween">
+                    </a>
+                </div>
+            </div>
+      
 
-p{
-    font-weight: 400;
-    line-height: 2;
-    color: black;
-}
+            <h3>Likes</h3>
+            <ul>
+                <li>Belly rubs</li>
+                <li>Head Rubs</li>
+                <li>Sleeping in cardboard boxes</li>
+            </ul>
 
-img{
- border: 5px solid #4d4949; 
-  padding: 10px;
-  margin: 20px;
-  border-top-right-radius: 30px;
-} 
-img:hover {
-  border-width: 10px; /* Increase the border width on hover */
-}
- video{
-  /* border: 5px solid #ff4500;  Replace #ff4500 with the color of your choice */
-  padding: 10px;
-  margin: 20px;
-  border-top-right-radius: 30px; 
- }
- 
-/* General styles for nav li and nav a */
-nav li {
-  display: inline;
-  float: right;
-  margin-right: 20px;
-}
+             <!-- Lauren Rodriguez -->
+        </div>
 
-nav a {
-  text-decoration: none;
-  color: rgb(66, 61, 68);
-  font-size: 40px;
-  font-weight: bold;
-  padding: 10px;
-}
+        <div class="line" id="yugi">
+            <h2>Yugi</h2>
+            <img src = "images/yugi_sleepa.jpg" alt = "Tan chihuahua sleeping on a black pillow" width="400">
+            <p>
+                Yugi is a 7 year old chihuahua who loves love and adores attention. A member of the sassy dog community, he is full of personality and character with a response for everything. Nicknamed King Yugi, he holds himself as a true royal and leader of the home, being given all the luxuries in life by his humans.
+            </p>
+            <p>
+                With the ability to love beyond his small body, Yugi is an attached lap dog that loves to be your sidekick. Protective, caring, and cuddly, there is never a time he isn’t there to support you and is always prepared for a short-notice nap time.
+            </p>
+            <h3>Photo Gallery</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/yugi_sun.PNG" data-fancybox="yugi-gallery" data-title="Yugi sunbathing">
+                        <img src="images/yugi_sun.PNG" alt="Yugi sunbathing">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/yugi_eyes.HEIC" data-fancybox="yugi-gallery" data-title="A close up photo of natural light highlighting Yugi’s eyes.">
+                        <img src="images/yugi_eyes.HEIC" alt="A close up photo of natural light highlighting Yugi’s eyes.">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/yugi_nom.JPG" data-fancybox="yugi-gallery" data-title="Yugi chomping on a finger">
+                        <img src="images/yugi_nom.JPG" alt="Yugi chomping on a finger">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/yugi_baby.JPG" data-fancybox="yugi-gallery" data-title="Yugi as a chubby puppy sleeping">
+                        <img src="images/yugi_baby.JPG" alt="Yugi as a chubby puppy sleeping">
+                    </a>
+                </div>
+            </div>
+            
+            <h3>Likes</h3>
+         <ul>
+            <li>Cuddling</li>
+            <li>Sleeping</li>
+            <li>Doing tricks for treats</li>
+        </ul>
 
-nav a:hover {
-  color: #241506;
-  font-weight: bold;
-}
+            <!-- Aileen Gonzalez -->
+        </div>
+        <div class="line" id="carlos">
+            <h2>Carlos</h2>
+            <img src="images/carlos.JPG" class = "thumbnail" width = "400" alt="Blue parakeet crouching about to fly">
+            <p>Carlos is a blue parakeet/budgerigar that my older sister adopted from her friend in high school. 
+                Carlos is 9 years old and loves flying around the kitchen and standing on chandeliers.
+                She has very loud chirps and loves to chatter when people play instruments. Although she can be 
+                aggressive at times and is very unfriendly towards strangers, she has a very soft bite.
+            </p>
+            <p>Carlos has a sister named Einstein. We did not discover the genders of our pet birds until years 
+                after we named them. At night, Carlos always sleeps on her favorite yellow swing and will wake up
+                 in the same spot every morning in the upstairs of her cage ready to come out and play.</p>
+            <h3>Photo Gallery</h3>
+            <div class="grid-item">
+                <a href="images/carlos_einstein.JPG" data-fancybox="carlos-gallery" data-caption="Blue parakeet standing with green parakeet">
+                    <img src="images/carlos_einstein.JPG" alt="Blue parakeet standing with green parakeet">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/carlos_preening.JPG" data-fancybox="carlos-gallery" data-caption="Blue parakeet standing on a girl's shoulder">
+                    <img src="images/carlos_preening.JPG" alt="Blue parakeet standing on a girl's shoulder">
+                </a>
+            </div>
+            <div class="grid-item">
+                <a href="images/carlos_millet.jpeg" data-fancybox="carlos-gallery" data-caption="Blue parakeet eating millet">
+                    <img src="images/carlos_millet.jpeg" alt="Blue parakeet eating millet">
+                </a>
+            </div>
+            
+            <h3>Likes</h3>
+            <ul>
+                <li>Spinach</li>
+                <li>Flying around</li>
+                <li>Taking baths</li>
+            </ul>
+                <!--Julia Zhang-->
+        </div>
 
-/* Style the active link (current page) */
-nav a:active {
-  color: #19304d;
-  font-weight: bold;
-  border: 2px solid #19304d;
-}
+        <div class="line" id="Milktea">
+            <h2>Milktea</h2>
+            <img width="400" src="images/Main.JPG" alt="Milktea taking nap">
+            <p>Milktea is a Scottish fold with a personality of a princess. She loves her veggies and refuses to eat anything dropped on the ground. She makes it clear when she has a demand of any sort by complaining in a loud, distinguished manner. If what she says could be translated, it probably would be, “This is atrocious, the water container has been empty for the 3rd time this week. I want to see the manager.”.</p>
+            <p>Despite her cuteness and royalty, she actually suffers from a genetic disorder intentionally brought upon by humans. I highly advise against keeping a Scottish fold because they are in constant pain when they reach around 2 years old. Cartilage accumulates around her paw joints and tail joints and it becomes painful for them to even walk. She is living evidence of human’s cruelty of breeding animals to look pretty while sacrificing the animals’ health.  </p>
+            <h3>Photo Gallery</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/Milktea_comfy.jpg" data-fancybox="milktea-gallery" data-caption="Milktea enjoying a good massage">
+                        <img src="images/Milktea_comfy.jpg" alt="Milktea enjoying a good massage">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Milktea_laptop.JPG" data-fancybox="milktea-gallery" data-caption="Baby Milktea On Laptop">
+                        <img src="images/Milktea_laptop.JPG" alt="Baby Milktea On Laptop">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Milktea_mirror.jpeg" data-fancybox="milktea-gallery" data-caption="Milktea sighing at the mirror">
+                        <img src="images/Milktea_mirror.jpeg" alt="Milktea sighing at the mirror">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/Milktea_catbox.JPG" data-fancybox="milktea-gallery" data-caption="Milktea in Catbox position">
+                        <img src="images/Milktea_catbox.JPG" alt="Milktea in Catbox position">
+                    </a>
+                </div>
+            </div>            
+            
+            <h3>Likes</h3>
+            <ul>
+                <li>She loves individual corn kernels served on human hands</li>
+                <li>She enjoys sitting royally on suitcases to claim ownership of her humans</li>
+                <li>She prefers to be alone and sit on soft surfaces in her free time</li>
+            </ul>
+            <!-- Olivia Ren -->
+        </div>
+        <div class="line" id="Honey">
+            <h2>Honey</h2>
+            <img width="400" src="images/honey_main.jpeg" alt="Honey is a retriever with honey brown fur.">
+            <p>Honeys favorite thing in the world is swimming. Even if it is the middle of January and half of the lake is frozen, Honey will be in the water. She is a smart swimmer, so when my brother and I go underwater, she will follow our air bubbles and be waiting for us when we come up for air.</p>
+            <p>While most dogs like to chase balls or sticks, Honey likes to chase rocks. She will even chase rocks into the water and stick her whole face in the water to try and find the rock thrown. Chasing rocks is her main form of exercise right now as she refuses to go on walks from our house. If we drive her to another spot and walk from there, Honey will go on a walk but she refuses to leave our driveway when we try to walk from home. Finally one other Honey-ism is that her safe place is bathtubs. Many times our family has woken up in the middle of the night and found Honey is a bathtub</p>
+            <h3>Photo Gallery</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/honey_rock.jpeg" data-fancybox="honey-gallery" data-caption="Honey playing with a rock">
+                        <img src="images/honey_rock.jpeg" alt="Honey playing with a rock">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/honey_sleeping.jpeg" data-fancybox="honey-gallery" data-caption="Honey taking a nap">
+                        <img src="images/honey_sleeping.jpeg" alt="Honey taking a nap">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/honey_smiling.jpeg" data-fancybox="honey-gallery" data-caption="Honey smiling">
+                        <img src="images/honey_smiling.jpeg" alt="Honey smiling">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/honey_swimming.jpeg" data-fancybox="honey-gallery" data-caption="Honey swimming">
+                        <img src="images/honey_swimming.jpeg" alt="Honey swimming">
+                    </a>
+                </div>
+            </div>
+            
+            
+            <h3>Likes</h3>
+            <ul>
+                <li>Likes rocks</li>
+                <li>Likes food</li>
+                <li>Likes attention</li>
+            </ul>
+            <!-- Abbie Tooman -->
+        </div>
+        <div>
+            <div id="Bo">
+            <h2>Bo</h2>
+            <img width="400" src="images/bo.jpg" alt="Black and white dog sitting on grass.">
+            <p> Bo is a Portuguese Water Dog with black and white fur. His paws are white too, so they always get dirty when outside. He is 12 years old, but he still likes to run around outside a lot. </p>
+            <p>He has an abundance of toys but only likes to play with a couple. He enjoys going on walks and especially on trails in the woods. He has a few dog friends that he likes to go on playdates with as well.
+            </p>
+            <h3>Photo Gallery</h3>
+            <div class="grid">
+                <div class="grid-item">
+                    <a href="images/bo_walking.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog walking on grass">
+                        <img src="images/bo_walking.jpg" alt="Black and white dog walking on grass">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/bo_and_friend.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog sitting by other black dog">
+                        <img src="images/bo_and_friend.jpg" alt="Black and white dog sitting by other black dog">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/bo_plane.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog in front of airplane">
+                        <img src="images/bo_plane.jpg" alt="Black and white dog in front of airplane">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a href="images/bo_chair.jpg" data-fancybox="bo-gallery" data-caption="Black and white dog sitting on top of a chair">
+                        <img src="images/bo_chair.jpg" alt="Black and white dog sitting on top of a chair">
+                    </a>
+                </div>
+            </div>
+        </div>
+            <h3>Likes</h3>
+            <ul>
+                <li>Walks</li>
+                <li>The Sun</li>
+                <li>Treats</li>
+            </ul>
+            <!-- Joseph Schaubroeck -->
+        </div>
+    </main>
 
-/* Styles for the active link with specific class */
-nav ul li a.nav-link.active {
-  font-weight: bold;
-  color: rgb(109, 109, 109);
-  /* Add any other styles you want for the active link */
-}
+    <script>
+        // side nav window 
+        const menuButton = document.getElementById('menuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const content = document.querySelector('.content');
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 10px; /* Spacing between grid items */
-}
+        menuButton.addEventListener('click', function() {
+            sideMenu.classList.toggle('active');
+            content.classList.toggle('shifted-content');
+        });
 
-.grid-item {
-  box-sizing: content-box;
-  padding: 10px;
-}
+        document.addEventListener('click', function(event) {
+            if (!sideMenu.contains(event.target) && event.target !== menuButton) {
+                sideMenu.classList.remove('active');
+                content.classList.remove('shifted-content');
+            }
+        });
 
-.grid-item img {
-  max-width: 80%;
-}
+        // fancybox 
 
-/* Style the images in specific rows */
-.grid-item:nth-child(3n + 1) img {
-  grid-row: span 2; /* Span 2 rows for the first image in every 3rd item */
-}
+        $(document).ready(function() {
+            $('[data-fancybox="luna-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('[data-fancybox="finn-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+            $('[data-fancybox="yugi-gallery"]').fancybox({
+                loop: true, // To loop back to the first image after the last one
+                buttons: ["slideShow", "fullScreen", "close"],
+                image: {
+                    protect: true // To prevent downloading images
+                }
+            });
+        });
+        $(document).ready(function() {
+        $('[data-fancybox="carlos-gallery"]').fancybox({
+            loop: true, // To loop back to the first image after the last one
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true // To prevent downloading images
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="milktea-gallery"]').fancybox({
+            loop: true,
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="honey-gallery"]').fancybox({
+            loop: true,
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true
+            }
+        });
+    });
+    $(document).ready(function() {
+        $('[data-fancybox="bo-gallery"]').fancybox({
+            loop: true,
+            buttons: ["slideShow", "fullScreen", "close"],
+            image: {
+                protect: true
+            }
+        });
+    });
+        document.addEventListener("DOMContentLoaded", function() {
+        var navLinks = document.querySelectorAll(".nav-link");
 
-.si-399 {
-  font-size: 50px;
-  float:left;
-  animation: spin 5s linear; /* Apply the 'spin' animation */
-}
+        // Set the "active" class based on the current page URL
+        navLinks.forEach(function(link) {
+            if (window.location.href.includes(link.getAttribute("href"))) {
+                link.classList.add("active");
+            }
+        });
 
-.side-menu {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  top: 0;
-  right: 0; /* Adjusted to the left side */
-  /* background-color:#aea196; */
-  background-color:#67625c;
-  background-image: url('/images/b2.jpg'); 
-  overflow-x: hidden;
-  transition: 0.5s; /* Adjust the transition speed as needed */
-  z-index: 1; /* Ensures the menu is on top of other elements */
-}
+        // Add click event listeners to each navigation link
+        navLinks.forEach(function(link) {
+            link.addEventListener("click", function() {
+                // Remove the "active" class from all links
+                navLinks.forEach(function(innerLink) {
+                    innerLink.classList.remove("active");
+                });
 
-.content {
-  transition: margin-right 0.5s; /* Adjust the transition speed as needed */
-}
+                // Add the "active" class to the clicked link
+                link.classList.add("active");
+            });
+        });
+    });
 
-.shifted-content {
-  margin-right: 200px; /* Adjust the width to fit the side menu */
-}
-
-.side-menu ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-.side-menu ul li {
-  padding: 15px 15px;
-  
-}
-.side-menu ul li a {
-  color: #ffffff; /* Change text color */
-  text-decoration: none; /* Remove link underline */
-}
-
-#closeButton {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.hamburger-menu {
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  margin: 4px 0;
-  transition: 0.4s;
-}
-
-/* Toggle active state for side menu */
-.side-menu.active {
-  width: 200px; /* Adjust the width as needed */
-}
-
-/* Define the 'spin' animation */
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-/* Tablet view */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Cascade images with a minimum width of 200px */
-    grid-gap: 10px; /* Spacing between grid items */
-    grid-template-rows: auto; /* Reset grid rows to auto for tablet view */
-  }
-
-  /* Additional styles for the body in tablet view */
-  body {
-    background-color: rgb(183, 186, 222);
-  }
-
-  /* Align the images differently inside the grid */
-  .grid img:nth-child(odd) {
-    align-self: start; /* Align odd images to the top of each grid item */
-  }
-
-  .grid img:nth-child(even) {
-    align-self: end; /* Align even images to the bottom of each grid item */
-  }
-}
-/* Mobile view */
-@media only screen and (max-width: 600px) {
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr; /* 2 columns */
-    grid-gap: 10px; /* Spacing between grid items */
-  }
-  body {
-    background-color: lightblue;
-    font-size: 25px;
-  }
-  h1{
-    text-align: center;
-  }
-  h2{
-    color:#3f647c;
-  }
-  p{
-    margin: auto;
-    padding-left: 40px;
-    font-size: 20px;
-    color:#113157;
-    text-align: left;
-   
-  } 
-  nav a {
-    /* text-decoration: none; */
-    color: #437287;
+    </script>
     
-    font-size: 25px;
-    /* font-weight: bold; */
-  }
-  nav a:hover {
-    color:#19304d;
-    font-weight: bold;
-  }
-  .si-399 {
-   display: none;
-  }
-}
-.still-image1 {
-  display: none; /* Initially hide the still image */
-}
-.still-image2 {
-  display: none; /* Initially hide the still image */
-}
-.still-image3 {
-  display: none; /* Initially hide the still image */
-}
-.still-image4 {
-  display: none; /* Initially hide the still image */
-}
-
-@media (prefers-reduced-motion: reduce) {
-  /* Hide GIFs */
-  .gif-class {
-    display: none;
-  }
-  .still-image1 {
-    display: inline-block; /* or block, depending on your layout */
-  }
-  .still-image2 {
-    display: inline-block; /* or block, depending on your layout */
-  }
-  .still-image3 {
-    display: inline-block; /* or block, depending on your layout */
-  }
-  .still-image4 {
-    display: inline-block; /* or block, depending on your layout */
-  }
-  .si-399 {
-    /* display: none; */
-    transition: margin-right 0;
-   }
-}
+</body>
+</html>
